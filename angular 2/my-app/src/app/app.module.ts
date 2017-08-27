@@ -12,6 +12,9 @@ import { ArticleComponent } from './pages/article/article.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Sib1Component } from './data-transfer/sib1/sib1.component';
 import { Sib2Component } from './data-transfer/sib2/sib2.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SlidersComponent } from './pages/sliders/sliders.component';
+import { WowSliderComponent } from './shared/wow-slider/wow-slider.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { Sib2Component } from './data-transfer/sib2/sib2.component';
     DiscussionComponent,
     ArticleComponent,
     Sib1Component,
-    Sib2Component
+    Sib2Component,
+    HomeComponent,
+    SlidersComponent,
+    WowSliderComponent
   ],
   imports: [
     BrowserModule,
