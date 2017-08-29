@@ -15,6 +15,7 @@ import { Sib2Component } from './data-transfer/sib2/sib2.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SlidersComponent } from './pages/sliders/sliders.component';
 import { WowSliderComponent } from './shared/wow-slider/wow-slider.component';
+import { Carousel3dComponent } from './shared/carousel-3d/carousel-3d.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { WowSliderComponent } from './shared/wow-slider/wow-slider.component';
     Sib2Component,
     HomeComponent,
     SlidersComponent,
-    WowSliderComponent
+    WowSliderComponent,
+    Carousel3dComponent
   ],
   imports: [
     BrowserModule,
