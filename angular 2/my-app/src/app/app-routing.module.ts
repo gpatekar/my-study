@@ -7,19 +7,21 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ArticleComponent } from './pages/article/article.component';
 import { DiscussionComponent } from './pages/discussion/discussion.component';
 import { SlidersComponent } from './pages/sliders/sliders.component';
+import { AccountComponent } from './pages/account/account.component';
 
 
 
-const appRoutes : Routes = [
+const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'about-us', component: AboutUsComponent},
   { path: 'article', component: ArticleComponent},
   { path: 'discussion', component: DiscussionComponent},
-  { path: 'sliders', component: SlidersComponent}
+  { path: 'sliders', component: SlidersComponent},
+  { path: 'Account', component: AccountComponent}
 ];
 
 @NgModule({
-  imports: [ 
+  imports: [
      RouterModule.forRoot(appRoutes)
   ],
   exports:
