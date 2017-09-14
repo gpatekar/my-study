@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormsModule }   from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { SlidersComponent } from './pages/sliders/sliders.component';
 import { WowSliderComponent } from './shared/wow-slider/wow-slider.component';
 import { Carousel3dComponent } from './shared/carousel-3d/carousel-3d.component';
+import { AccountComponent } from './pages/account/account.component';
+import { CreateComponent } from './pages/account/create/create.component';
+import { AccordionComponent } from './shared/accordion/accordion.component'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { Carousel3dComponent } from './shared/carousel-3d/carousel-3d.component'
     HomeComponent,
     SlidersComponent,
     WowSliderComponent,
-    Carousel3dComponent
+    Carousel3dComponent,
+    AccountComponent,
+    CreateComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
