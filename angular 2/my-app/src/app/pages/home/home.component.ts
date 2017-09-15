@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
+// import { ScrollSpyAffixDirective, ScrollSpyAffixOptions } from 'ng2-scrollspy/dist/plugin/affix.directive';
+
 
 @Component({
   selector: 'app-home',
@@ -7,7 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
+
+  // ngAfterViewInit() {
+  //       this.scrollSpyService.getObservable('window').subscribe((e: any) => {
+  //           console.log('ScrollSpy::window: ', e);
+  //       });
+  //   }
+
 
   ngOnInit() {
   }

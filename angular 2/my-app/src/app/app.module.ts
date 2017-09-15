@@ -18,7 +18,11 @@ import { WowSliderComponent } from './shared/wow-slider/wow-slider.component';
 import { Carousel3dComponent } from './shared/carousel-3d/carousel-3d.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CreateComponent } from './pages/account/create/create.component';
-import { AccordionComponent } from './shared/accordion/accordion.component'; 
+import { AccordionComponent } from './shared/accordion/accordion.component';
+
+import { ScrollSpyModule } from 'ng2-scrollspy'; //https://www.npmjs.com/package/ng2-scrollspy
+import { ScrollSpyAffixDirective } from 'ng2-scrollspy/dist/plugin/affix.directive';
+
 
 @NgModule({
   declarations: [
@@ -34,12 +38,14 @@ import { AccordionComponent } from './shared/accordion/accordion.component';
     Carousel3dComponent,
     AccountComponent,
     CreateComponent,
-    AccordionComponent
+    AccordionComponent,
+    ScrollSpyAffixDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ScrollSpyModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
