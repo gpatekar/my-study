@@ -17,7 +17,7 @@ export class WowSliderComponent implements OnInit {
   ngAfterViewInit() {
      this.zone.runOutsideAngular(() => {
       initWowSlider(this.el.nativeElement);
-    }); 
+    });
   }
 
 }
