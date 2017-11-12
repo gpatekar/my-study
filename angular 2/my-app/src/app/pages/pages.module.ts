@@ -9,7 +9,7 @@ import {
   HomeComponent,
   AccountComponent,
   CreateComponent,
-  SlidersComponent
+  SlidersComponent,
    } from '.';
 
 @NgModule({

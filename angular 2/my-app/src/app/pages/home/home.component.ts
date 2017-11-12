@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy'; 
+import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
 
 @Component({
   selector: 'app-home',

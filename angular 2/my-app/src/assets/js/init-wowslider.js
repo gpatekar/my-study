@@ -3,7 +3,6 @@
 
 
 module.exports = function initWowSlider(ele) {
-
     jQuery.extend(jQuery.easing, { easeInOutQuart: function(e, f, a, h, g) { if ((f /= g / 2) < 1) { return h / 2 * f * f * f * f + a } return -h / 2 * ((f -= 2) * f * f * f - 2) + a } });
 
     function ws_turn(d, a, b) {
