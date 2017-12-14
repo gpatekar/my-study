@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 declare var google: any;
 
 @Component({
+    template: ''
 })
 export class GoogleChartComponent  implements OnInit  {
 

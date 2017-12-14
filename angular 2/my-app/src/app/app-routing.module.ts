@@ -10,7 +10,6 @@ import { SlidersComponent } from './pages/sliders/sliders.component';
 import { AccountComponent } from './pages/account/account.component';
 
 
-
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'about-us', component: AboutUsComponent},
@@ -22,7 +21,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
-     RouterModule.forRoot(appRoutes)
+     RouterModule.forRoot( appRoutes, { enableTracing: true } )
   ],
   exports:
   [

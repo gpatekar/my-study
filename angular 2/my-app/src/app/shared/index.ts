@@ -4,4 +4,6 @@ export { AccordionComponent } from './accordion/accordion.component';
 export { LineChartComponent } from './charts/line-chart/line-chart.component';
 export { GoogleMapComponent } from './google-map/google-map.component';
 export { GeoMapComponent } from './geo-map/geo-map.component';
-export {GoogleChartMapComponent} from './google-chart-map/google-chart-map.component'
+export { GoogleChartMapComponent } from './google-chart-map/google-chart-map.component'
+export { DataTableComponent } from './data-table/data-table.component';
+export { GoogleChartComponent } from './google-chart-map/ChartComponent';

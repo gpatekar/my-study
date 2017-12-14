@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import {HeroService} from './hero-service';
+import { FormsModule } from '@angular/forms';
 
 
 // hero components
@@ -9,7 +11,7 @@ import {
   HeroListComponent,
   HeroDetailComponent } from '.';
 
-  const appRoutes: Routes = [
+  const heroRoutes: Routes = [
     {
       path: 'hero/:id',
       component: HeroDetailComponent
@@ -27,12 +29,18 @@ import {
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(heroRoutes),
+    FormsModule
   ],
   declarations: [
     HeroComponent,
     HeroListComponent,
     HeroDetailComponent
-  ]
+  ],
+  exports: [
+    RouterModule
+  ],
+  providers: [ HeroService ]
 })
 export class HeroModule { }

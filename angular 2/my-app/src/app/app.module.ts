@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeroModule } from './hero/hero.module';
+import { CrisisModule } from './crisis-center/crisis.module';
 
 // Pages
 import { PagesModule } from './pages/pages.module';
@@ -26,8 +28,10 @@ import { ScrollSpyAffixDirective } from 'ng2-scrollspy/dist/plugin/affix.directi
     AppRoutingModule,
     FormsModule,
     PagesModule,
+    HeroModule,
    // NgxDatatableModule,
-    ScrollSpyModule.forRoot()
+    ScrollSpyModule.forRoot(),
+    CrisisModule
   ],
   providers: [],
   bootstrap: [AppComponent]

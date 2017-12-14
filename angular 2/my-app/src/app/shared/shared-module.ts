@@ -11,7 +11,10 @@ import {
   AccordionComponent,
   GoogleMapComponent,
   GeoMapComponent,
-  GoogleChartMapComponent} from '.';
+  GoogleChartMapComponent,
+LineChartComponent,
+DataTableComponent,
+GoogleChartComponent} from '.';
 
 @NgModule({
   imports: [
@@ -26,7 +29,10 @@ import {
     AccordionComponent,
     GoogleMapComponent,
     GeoMapComponent,
-    GoogleChartMapComponent
+    GoogleChartMapComponent,
+    LineChartComponent,
+    DataTableComponent,
+    GoogleChartComponent
   ],
   exports: [
     WowSliderComponent,

@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import 'rxjs/add/operator/switchMap';
+import { Component, OnInit, HostBinding, NgModule } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
+import { Hero, HeroService } from '../hero-service';
+
 
 @Component({
   selector: 'app-hero-detail',
@@ -7,9 +13,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroDetailComponent implements OnInit {
 
-  constructor() { }
+  hero$: Observable<Hero>;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private service: HeroService
+  ) { }
 
   ngOnInit() {
+     this.hero$ = this.route.paramMap
+      .switchMap((params: ParamMap) =>  this.service.getHero(params.get('id')));
+
+    // snapshot method
+     const id = this.route.snapshot.paramMap.get('id');
+     this.hero$ = this.service.getHero(id);
+  }
+
+  gotoHeroes(hero: Hero) {
+    let heroId = hero ? hero.id : null;
+    // Pass along the hero id if available
+    // so that the HeroList component can select that hero.
+    // Include a junk 'foo' property for fun.
+    this.router.navigate(['/heroes', { id: heroId, foo: 'foo' }]);
   }
 
 }
