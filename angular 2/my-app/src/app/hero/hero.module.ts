@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import {HeroService} from './hero-service';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 // hero components
@@ -31,7 +33,8 @@ import {
   imports: [
     CommonModule,
     RouterModule.forChild(heroRoutes),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   declarations: [
     HeroComponent,

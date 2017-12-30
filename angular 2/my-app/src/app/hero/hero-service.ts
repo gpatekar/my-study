@@ -4,7 +4,11 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 export class Hero {
-  constructor(public id: number, public name: string) { }
+  constructor(public id: number, public name: string,  public state = 'inactive') { }
+
+  toggleState() {
+    this.state = this.state === 'active' ? 'inactive' : 'active';
+  }
 }
 
 const HEROES = [
