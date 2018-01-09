@@ -10,6 +10,7 @@ import {
   AccountComponent,
   CreateComponent,
   SlidersComponent,
+  PlaygroundComponent
    } from '.';
 
 @NgModule({
@@ -24,7 +25,8 @@ import {
     HomeComponent,
     AccountComponent,
     CreateComponent,
-    SlidersComponent
+    SlidersComponent,
+    PlaygroundComponent
   ],
 })
 export class PagesModule { }

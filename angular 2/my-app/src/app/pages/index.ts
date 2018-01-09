@@ -5,3 +5,5 @@ export { ArticleComponent } from '../pages/article/article.component';
 export { SlidersComponent } from '../pages/sliders/sliders.component';
 export { AccountComponent } from '../pages/account/account.component';
 export { CreateComponent } from '../pages/account/create/create.component';
+export { PlaygroundComponent } from '../pages/playground/playground.component';
+
