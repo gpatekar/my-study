@@ -13,16 +13,15 @@ import { PagesModule } from './pages/pages.module';
 
 // plugins
 import { ScrollSpyModule } from 'ng2-scrollspy'; //https://www.npmjs.com/package/ng2-scrollspy
-import { ScrollSpyAffixDirective } from 'ng2-scrollspy/dist/plugin/affix.directive'; 
+import { ScrollSpyAffixDirective } from 'ng2-scrollspy/dist/plugin/affix.directive';
+
+// directives
+import { ScrollFixDirective } from './directives';
 
 // table plugin
 // import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ScrollSpyAffixDirective
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,6 +31,10 @@ import { ScrollSpyAffixDirective } from 'ng2-scrollspy/dist/plugin/affix.directi
    // NgxDatatableModule,
     ScrollSpyModule.forRoot(),
     CrisisModule
+  ],
+  declarations: [
+    AppComponent,
+    ScrollSpyAffixDirective,
   ],
   providers: [],
   bootstrap: [AppComponent]
