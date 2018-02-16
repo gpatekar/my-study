@@ -1,0 +1,14 @@
+<agm-map [latitude]="lat" [longitude]="lng" style="width: 500px; height: 500px;" [zoom]="zoom" [disableDefaultUI]="true" [zoomControl]="false">
+    <agm-marker *ngFor="let item of markers" [latitude]="item.lat" [longitude]="item.lng">
+        <agm-snazzy-info-window [maxWidth]="200" [latitude]="item.lat" [longitude]="item.lng" [closeWhenOthersOpen]="true">
+            <ng-template>
+                <p>State: <strong>{{item.state}}</strong></p>
+                <p>Users: <strong>{{item.count}}</strong></p>
+            </ng-template>
+        </agm-snazzy-info-window>
+
+        <!--<agm-circle [latitude]="lat" [longitude]="lng" [radius]="5000" [fillColor]="'red'" [circleDraggable]="true" [editable]="true">
+    </agm-circle>-->
+        <!--<h1 style="position:absolute; left: 0; ">what</h1>-->
+    </agm-marker>
+</agm-map>

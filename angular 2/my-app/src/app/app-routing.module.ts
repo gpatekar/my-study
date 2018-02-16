@@ -8,7 +8,7 @@ import { ArticleComponent } from './pages/article/article.component';
 import { DiscussionComponent } from './pages/discussion/discussion.component';
 import { SlidersComponent } from './pages/sliders/sliders.component';
 import { AccountComponent } from './pages/account/account.component';
-
+import { PlaygroundComponent } from './pages/playground/playground.component';
 
 
 const appRoutes: Routes = [
@@ -17,12 +17,13 @@ const appRoutes: Routes = [
   { path: 'article', component: ArticleComponent},
   { path: 'discussion', component: DiscussionComponent},
   { path: 'sliders', component: SlidersComponent},
-  { path: 'Account', component: AccountComponent}
+  { path: 'Account', component: AccountComponent},
+  { path: 'playground', component: PlaygroundComponent}
 ];
 
 @NgModule({
   imports: [
-     RouterModule.forRoot(appRoutes)
+     RouterModule.forRoot( appRoutes, {} )
   ],
   exports:
   [

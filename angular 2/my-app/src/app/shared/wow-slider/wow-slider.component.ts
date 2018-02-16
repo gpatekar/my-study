@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, NgZone } from '@angular/core';
+import { Component, OnInit, ElementRef, NgZone, AfterViewInit } from '@angular/core';
 import 'assets/js/wowslider.js';
 import initWowSlider from 'assets/js/init-wowslider.js';
 
@@ -7,7 +7,7 @@ import initWowSlider from 'assets/js/init-wowslider.js';
    templateUrl: './wow-slider.component.html',
   styleUrls: ['./wow-slider.component.css']
 })
-export class WowSliderComponent implements OnInit {
+export class WowSliderComponent implements OnInit, AfterViewInit {
 
   constructor(private el: ElementRef, private zone: NgZone) { }
 

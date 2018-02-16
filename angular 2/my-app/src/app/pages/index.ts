@@ -1,7 +1,9 @@
-export { AboutUsComponent } from './about-us/about-us.component';
-export { DiscussionComponent } from './discussion/discussion.component';
-export { ArticleComponent } from './article/article.component';
-export { HomeComponent } from './home/home.component';
-export { AccountComponent } from './account/account.component';
-export { CreateComponent } from './account/create/create.component';
-export { SlidersComponent } from './sliders/sliders.component';
+export { HomeComponent } from '../pages/home/home.component';
+export { AboutUsComponent } from '../pages/about-us/about-us.component';
+export { DiscussionComponent } from '../pages/discussion/discussion.component';
+export { ArticleComponent } from '../pages/article/article.component';
+export { SlidersComponent } from '../pages/sliders/sliders.component';
+export { AccountComponent } from '../pages/account/account.component';
+export { CreateComponent } from '../pages/account/create/create.component';
+export { PlaygroundComponent } from '../pages/playground/playground.component';
+

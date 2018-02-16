@@ -9,8 +9,13 @@ import {
   HomeComponent,
   AccountComponent,
   CreateComponent,
-  SlidersComponent
+  SlidersComponent,
+  PlaygroundComponent
    } from '.';
+import { StickyComponent } from './sticky/sticky.component';
+
+// directives
+import { ScrollFixDirective } from '../directives';
 
 @NgModule({
   imports: [
@@ -24,7 +29,10 @@ import {
     HomeComponent,
     AccountComponent,
     CreateComponent,
-    SlidersComponent
+    SlidersComponent,
+    PlaygroundComponent,
+    StickyComponent,
+    ScrollFixDirective
   ],
 })
 export class PagesModule { }
