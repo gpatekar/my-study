@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes }  from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent,DashboardComponent } from './../pages/'; 
+import { LoginComponent, DashboardComponent, ApplyLeaveComponent } from './../pages/';
 
-const appRoutes: Routes = [ 
+const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'apply-leaves', component: ApplyLeaveComponent },
   { path: '**', component: LoginComponent },
 ];
 
@@ -13,7 +14,7 @@ const appRoutes: Routes = [
   imports: [
      RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      //{ enableTracing: true } // <-- debugging purposes only
     )
   ],
   declarations: []
@@ -22,6 +23,6 @@ const appRoutes: Routes = [
     RouterModule
   ]
 })
-export class AppRoutingModule { 
-  
+export class AppRoutingModule {
+
 }

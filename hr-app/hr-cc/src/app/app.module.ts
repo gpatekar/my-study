@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }          from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LoginComponent,DashboardComponent } from './pages/'; 
+import { LoginComponent, DashboardComponent, ApplyLeaveComponent } from './pages/';
+import { HeaderComponent, CalendarComponent } from './pages/shared';
 
 import { Http, RequestOptions } from '@angular/http';
 import { AuthHttp, AuthConfig } from 'angular2-jwt';
@@ -24,6 +25,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     AppComponent,
     LoginComponent,
     DashboardComponent,
+    ApplyLeaveComponent,
+    HeaderComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
