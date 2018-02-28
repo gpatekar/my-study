@@ -9,12 +9,12 @@
             <th>Sat</th>
             <th>Sun</th>
         </tr>
-        <tr>
-            <td>
+        <tr *ngFor="let rows of calendars">
+            <td *ngFor="let item of rows">
                 <div class="event">
-                    <span class="{{event}}"></span>
+                    <span class="{{item.event}}"></span>
                 </div>
-                <div class="day">{{day}}</div>
+                <div class="day">{{item.day}}</div>
             </td>
         </tr>
     </table>
