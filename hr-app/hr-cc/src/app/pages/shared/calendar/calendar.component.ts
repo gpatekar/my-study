@@ -21,6 +21,9 @@ export class CalendarComponent implements OnInit {
     this.genCalendar(2018, 1);
   }
 
+  initCalendar() {
+  }
+
   genCalendar(year, month) {
     // get first day of month
     const firstDay = new Date(year, month, 1);
@@ -37,15 +40,20 @@ export class CalendarComponent implements OnInit {
     }
 
     let days = 1;
+    // loop though rows
     for (let i = 0; i < 5; i++) {
       this.calendars[i] = [];
+      // loop through columns
       for (let j = 0; j < 7; j++) {
         if (i === 0 && j < startingDay || i === 4 && days > daysInMonth) {
+          // add blank columns in start and end based on from where the month starts and ends
           this.calendars[i].push({day: '', events: ['', '']});
         } else {
+          // add days
           this.calendars[i].push({day: days++, events: ['1', '3']});
         }
       }
     }
+}
 }
 
