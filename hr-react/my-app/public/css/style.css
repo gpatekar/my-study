@@ -1,0 +1,28 @@
+/*global*/
+body {
+    background: url(../images/bg.jpg) repeat-x fixed left top #f3f3f3;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #5c514e;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+/*header*/
+header{
+    height: 80px;
+} 
+
+.user-panel .info{
+    margin-right: 10px;
+}
+.user-panel .image img{
+    width: 80px;
+}
+
+/*main content area*/
+.main{
+    background: #fff;
+    padding: 20px;
+}

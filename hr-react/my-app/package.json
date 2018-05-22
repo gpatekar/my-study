@@ -3,16 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
+    "date-fns": "^1.29.0",
     "history": "^4.7.2",
-    "react": "^16.3.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.3.1",
+    "react-infinite-calendar": "^2.3.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-tiny-virtual-list": "^2.1.4",
+    "recompose": "^0.27.0",
+    "shallowequal": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
   }
 }
