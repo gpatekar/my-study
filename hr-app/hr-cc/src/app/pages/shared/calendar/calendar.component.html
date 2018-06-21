@@ -1,0 +1,21 @@
+<div class="calendar" #calendar>
+    <table>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr *ngFor="let rows of calendars">
+            <td *ngFor="let item of rows">
+                <div class="event">
+                    <span class="{{item.event}}"></span>
+                </div>
+                <div class="day">{{item.day}}</div>
+            </td>
+        </tr>
+    </table>
+</div>
