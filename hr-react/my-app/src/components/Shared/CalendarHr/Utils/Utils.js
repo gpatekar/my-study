@@ -185,5 +185,4 @@ export function range(start, stop, step = 1) {
 
   return range;
 };
-
-export {default as animate} from './animate';
+ 

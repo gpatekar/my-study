@@ -44,7 +44,7 @@ handleFahrenheitChange(temperature){
         const scale = this.state.scale;
         const temperature = this.state.temperature;
 
-         const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
+        const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
         const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
         return (
             <div>
