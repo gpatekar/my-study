@@ -7,7 +7,7 @@ Node Update
 - sudo n stable (upgrade to lastest version)
 
 
-Environment Setting
+Environment Setting<br>
 angular.json file
 "configurations": {
   "production": { ... },
