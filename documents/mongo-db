@@ -1,0 +1,11 @@
+Install Brew:
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Install Mongo db:
+- brew update
+- brew install mongodb
+
+If mac version error
+- brew search mongodb
+- brew install mongodb@3.4
+
