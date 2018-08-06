@@ -5,6 +5,8 @@ Remove node files:
 - NodeJS Is single threaded
 - It is known for multi tasking and avoids block.
 
+Express JS
+- Express js is Node module which handles, Routes, HTTP parameters and middlewear functionalities.
 
 Express Generator
 http://expressjs.com/en/starter/generator.html
