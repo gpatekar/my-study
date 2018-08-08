@@ -7,7 +7,11 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users'); 
 var feedbackRouter = require('./routes/feedback');
-var feedbackDatatRouter = require('./routes/feedbackData');
+var feedbackDatatRouter = require('./routes/feedbackData'); 
+var studentsRouter = require('./routes/students');
+var studentsApiRouter = require('./api/student');
+var collationApiRouter = require('./api/collation');
+var basicCrudApiRouter = require('./api/basicCrud');
 
 var app = express();
 
@@ -24,7 +28,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter); 
 app.use('/feedback', feedbackRouter); 
-app.use('/feedbackData', feedbackDatatRouter);
+app.use('/feedbackData', feedbackDatatRouter); 
+app.use('/students', studentsRouter); 
+app.use('/studentsApi', studentsApiRouter); 
+app.use('/collationApi', collationApiRouter); 
+app.use('/basicCrudApiRouter', basicCrudApiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

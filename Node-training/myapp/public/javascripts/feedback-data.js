@@ -1,9 +1,12 @@
  
 
  $(function() { 
+
+     // api get call (static)
     $.get('http://localhost:3000/feedbackData/',function(data){
         console.log(data);
-   });
+   }); 
+
 });
 
 //on  form submit

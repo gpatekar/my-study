@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 /myapp/node_modules
+/myapp/data
 
 # IDEs and editors
 /.idea
