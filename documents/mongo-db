@@ -18,3 +18,4 @@ Manual Install:
 
 Project Installation:
 - npm install mongodb --save
+- mongod --dpath /databasepath
