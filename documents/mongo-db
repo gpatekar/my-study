@@ -16,3 +16,5 @@ Manual Install:
 - Copy all the downloaded bin files.
 - In terminal enter mongod.
 
+Project Installation:
+- npm install mongodb --save
