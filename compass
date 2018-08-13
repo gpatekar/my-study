@@ -1,0 +1,8 @@
+Installation:
+- gem install compass
+
+
+
+Installation issue fixes:(https://stackoverflow.com/questions/25584355/installing-compass-via-the-command-line-receive-error-extconf-failed-exit-co)
+- xcode-select --install
+- sudo gem install compass
