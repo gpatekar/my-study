@@ -1,6 +1,8 @@
-# study-React
+# Arrow FUntions
 
-How to update Node
-- sudo npm cache clean -f (force) (clear you npm cache)
-- sudo npm install -g n install "n" (this might take a while)
-- sudo n stable (upgrade to lastest version)
+- Functions are defined using arrows
+  item => item +1
+- If function has more than one argument than it must be enclosed in parenthesis()
+ (item, item2) => item + item2
+- 
+ 
