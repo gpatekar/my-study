@@ -2,7 +2,7 @@
 
 - Functions are defined using arrows
   item => item +1
-- If function has more than one argument than it must be enclosed in parenthesis()
+- If the function has more than one argument than it must be enclosed in parenthesis()
  (item, item2) => item + item2
 - If no parameters than empty parenthesis
   () => item +1
