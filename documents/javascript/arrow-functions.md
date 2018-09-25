@@ -1,4 +1,4 @@
-# Arrow FUntions
+# Arrow Funtions
 
 - Functions are defined using arrows
   item => item +1
