@@ -33,6 +33,12 @@ const point = [10, 25, -34];
 
 const [x, y, z] = point;
 ```
+## Destructuring with default values
+```
+function createGrid([width = 5, height = 5] = []) {
+  return `Generates a ${width} x ${height} grid`;
+}
+```
 
 ## Object literal shorthand
 
@@ -92,3 +98,16 @@ function sum(...nums) {
   return total;
 }
 ```
+
+## Arrow functions
+- value of **this** depends on where the function is declared. Parent scope.
+
+**Usage**
+```
+name => name.toUpperCase()
+(name, School) => {
+  return name + school
+}
+```
+
+
