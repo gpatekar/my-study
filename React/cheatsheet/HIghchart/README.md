@@ -1,6 +1,6 @@
 # React
 
-**Reference Links ***
+**Reference Link**
 https://www.highcharts.com/
 
 ## How to install
