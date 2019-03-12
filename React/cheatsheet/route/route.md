@@ -1,56 +1,33 @@
 # React
 
-**Reference Link**
-https://www.highcharts.com/
-
 ## How to install
 npm install highcharts --save
 
 **Usage**
 ```
 import React from 'react';
-import Highcharts from 'highcharts';
+import { Route, Switch } from 'react-router-dom'; 
+import NoMatch from './components/NoMatch';
 
-class OverviewGraph extends React.PureComponent {
-    componentDidMount() { 
-        this.generateGraph();
-    }
+import Home from './components/AccountCallList';
+import AboutUS from './components/ArchiveCallList';
+import ContactUS from './components/CallList';
+import SinglePage from './components/SingleCall';
+import SingleFlexCall from './components/SingleFlexCall'; 
 
-    generateGraph = () => { 
-        const { categories, data } = this.props;
-        const chartOptions = {
-            title: {
-                text: 'Overview graph',
-            },
-            yAxis: {
-                title: {
-                    text: 'Number of calls',
-                },
-            },
-            xAxis: {
-                categories,
-            },
-            series: [{
-                type: 'column',
-                name: 'Calls',
-                data,
-                color: '#76b92c',
-            }],
-        };
-        this.chart =  Highcharts.chart(
-            'overview-graph',
-            chartOptions,
-        );
-    }
-    componentWillUnmount() {
-        this.chart.destroy();
-    }
-    render() {
-        return (
-            <div id="overview-graph" />
-        );
-    }
-}
+const Routes = () => (
+    <section>
+        <Nav />
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about-us" component={AboutUS} />
+            <Route path="/contact-us" component={ContactUS} />
+            <Route path="/single-page/:Id" component={SinglePage} />
+            <Route path="/flex-call/:CallId" component={SingleFlexCall} /> 
+            <Route component={NoMatch} />
+        </Switch>
+    </section>
+);
 
-export default OverviewGraph;
+export default Routes;
 ```
