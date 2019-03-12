@@ -1,33 +1,19 @@
-# React
+# React Udacity Course
 
-## How to install
-npm install highcharts --save
+## Refrence
+https://classroom.udacity.com/
 
-**Usage**
-```
-import React from 'react';
-import { Route, Switch } from 'react-router-dom'; 
-import NoMatch from './components/NoMatch';
+**Git Repos Cloned**
+- https://github.com/udacity/reactnd-contacts-server2
+- https://github.com/udacity/reactnd-contacts-app
 
-import Home from './components/AccountCallList';
-import AboutUS from './components/ArchiveCallList';
-import ContactUS from './components/CallList';
-import SinglePage from './components/SingleCall';
-import SingleFlexCall from './components/SingleFlexCall'; 
+## How to start
+**Server**
+- git clone https://github.com/udacity/reactnd-contacts-server2.git
+- install the project dependencies with npm install
+- start the server with node server.js
+**App**
+- git clone https://github.com/udacity/reactnd-contacts-app.git
+- install the project dependencies with npm install
+- start the server with npm start
 
-const Routes = () => (
-    <section>
-        <Nav />
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about-us" component={AboutUS} />
-            <Route path="/contact-us" component={ContactUS} />
-            <Route path="/single-page/:Id" component={SinglePage} />
-            <Route path="/flex-call/:CallId" component={SingleFlexCall} /> 
-            <Route component={NoMatch} />
-        </Switch>
-    </section>
-);
-
-export default Routes;
-```
