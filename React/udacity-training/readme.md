@@ -12,6 +12,8 @@ https://classroom.udacity.com/
 - git clone https://github.com/udacity/reactnd-contacts-server2.git
 - install the project dependencies with npm install
 - start the server with node server.js
+
+
 **App**
 - git clone https://github.com/udacity/reactnd-contacts-app.git
 - install the project dependencies with npm install
