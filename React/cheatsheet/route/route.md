@@ -1,7 +1,7 @@
 # React
 
 ## How to install
-npm install highcharts --save
+npm install --save react-router-dom
 
 **Usage**
 ```
