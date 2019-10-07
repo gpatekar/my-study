@@ -1,0 +1,5 @@
+*** Install CLI ****
+npm install -g create-react-app
+
+*** Create APP ***
+npx create-react-app app-name

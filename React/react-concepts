@@ -1,0 +1,10 @@
+# React Concepts
+
+##  High Order components
+- Function that accepts component and returns a component
+- It composes the the original component by wrapping the container
+- HOC a pure function without sideeffects
+
+**Advantage**
+- You can send as many parameters you want to the HOC
+- Which will allow you to create configurable component
